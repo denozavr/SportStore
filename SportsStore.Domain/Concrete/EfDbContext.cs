@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SportsStore.Domain.Entities;
 
-namespace SportsStore.Domain.Abstract
+namespace SportsStore.Domain.Concrete
 {
-    public interface IProductRepository
+    public class EfDbContext :DbContext
     {
-        IEnumerable<Product> Products { get; }
+        public DbSet<Product> Products { get; set; }
     }
 }
