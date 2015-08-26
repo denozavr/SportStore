@@ -33,9 +33,8 @@ namespace SportsStore.UnitTests
                 
                 //assert
                 Product[] prodArr = result.ToArray();
-                Assert.IsTrue(prodArr.Length==2);
+                Assert.IsTrue(prodArr.Length==3);
                 Assert.AreEqual(prodArr[0].Name,"P4");
-
         }
     }
 }
