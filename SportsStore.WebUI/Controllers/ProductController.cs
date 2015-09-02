@@ -21,7 +21,7 @@ namespace SportsStore.WebUI.Controllers
 
         public ViewResult List(string category,int page=1)
         {
-            ProductsListViewModel model = new ProductsListViewModel {Products = repository.Products.Where(p=>p.Category ==null || p.Category==category).OrderBy(p=>p.ProductId
+            ProductsListViewModel model = new ProductsListViewModel {Products = repository.Products.Where(p=> category==null || p.Category==category).OrderBy(p=>p.ProductId
                 ).Skip((page-1)*PageSize).Take(PageSize),
             PagingInfo = new PagingInfo
             {
