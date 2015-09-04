@@ -40,7 +40,7 @@ namespace SportsStore.WebUI.Controllers
             return RedirectToAction("Index", new {returnUrl});
         }
 
-        public RedirectToRouteResult RemoveFromCart(Cart cart, string productId, string returnUrl)
+        public RedirectToRouteResult RemoveFromCart(Cart cart, int productId, string returnUrl)
         {
             Product product = repository.Products.FirstOrDefault(p => p.ProductId == productId);
 

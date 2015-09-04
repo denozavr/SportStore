@@ -6,7 +6,7 @@ using SportsStore.Domain.Entities;
 namespace SportsStore.UnitTests
 {
     [TestClass]
-    public class CartTest
+    public class CartModelTest
     {
         [TestMethod]
         public void Can_Add_New_Lines()
