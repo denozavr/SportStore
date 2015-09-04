@@ -32,6 +32,20 @@ namespace SportsStore.Domain.Binders
             }
             // return the cart
             return cart;
+
+
         }
+
+        //OLD METHOD FROM CONTROLLER
+        //private Cart GetCart()
+        //{
+        //    Cart cart = (Cart)Session["Cart"];
+        //    if (cart == null)
+        //    {
+        //        cart = new Cart();
+        //        Session["Cart"] = cart;
+        //    }
+        //    return cart;
+        //}
     }
 }
