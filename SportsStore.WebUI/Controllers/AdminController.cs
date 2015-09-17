@@ -30,5 +30,7 @@ namespace SportsStore.WebUI.Controllers
             return View(product);
         }
 
+       
+
     }
 }
