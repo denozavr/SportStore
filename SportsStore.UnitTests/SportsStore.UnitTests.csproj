@@ -107,6 +107,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="CartControllerTest.cs" />
     <Compile Include="CartModelTest.cs" />
+    <Compile Include="ImageTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
